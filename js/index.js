@@ -134,41 +134,41 @@
 // модалка
 
 
-const refs = {
-  openModalBtn: document.querySelector('[data-action="open-modal"]'),
-  closeModalBtn: document.querySelector('[data-action="close-modal"]'),
-  backdrop: document.querySelector('.js-backdrop'),
-};
+// const refs = {
+//   openModalBtn: document.querySelector('[data-action="open-modal"]'),
+//   closeModalBtn: document.querySelector('[data-action="close-modal"]'),
+//   backdrop: document.querySelector('.js-backdrop'),
+// };
 
-refs.openModalBtn.addEventListener('click', onModalOpen);
-refs.closeModalBtn.addEventListener('click', onModalClose);
-refs.backdrop.addEventListener('click', onBackdropClikc);
+// refs.openModalBtn.addEventListener('click', onModalOpen);
+// refs.closeModalBtn.addEventListener('click', onModalClose);
+// refs.backdrop.addEventListener('click', onBackdropClikc);
 
 
-function onModalOpen() {
-    window.addEventListener('keydown', onKeydownEsc);
-    document.body.classList.add('show-modal')
+// function onModalOpen() {
+//     window.addEventListener('keydown', onKeydownEsc);
+//     document.body.classList.add('show-modal')
     
-} 
-function onModalClose() {
-    window.removeEventListener('keydown', onKeydownEsc);
-    document.body.classList.remove('show-modal')
+// } 
+// function onModalClose() {
+//     window.removeEventListener('keydown', onKeydownEsc);
+//     document.body.classList.remove('show-modal')
     
-} 
+// } 
 
-function onBackdropClikc(e) {
-    console.log(e.currentTarget);
-    console.log(e.target)
+// function onBackdropClikc(e) {
+//     console.log(e.currentTarget);
+//     console.log(e.target)
 
-    if (e.currentTarget === e.target) {
-        onModalClose() 
-    }
-}
+//     if (e.currentTarget === e.target) {
+//         onModalClose() 
+//     }
+// }
 
-function onKeydownEsc(e) {
-    if (e.code === 'Escape'){
-        onModalClose(); 
-    }
+// function onKeydownEsc(e) {
+//     if (e.code === 'Escape'){
+//         onModalClose(); 
+//     }
    
    
-};
+// };
